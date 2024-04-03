@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* geral */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+/* cabeçalho */
+
+header{
+    background-color: burlywood;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+#btn-membros{
+    display: block;
+    font-size: 2em;
+    overflow-y: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+#membros{
+    position: absolute;
+    top: 105px;
+    left: calc(50% - 100px);
+    display: none;
+    margin: auto;
+    width: 200px;
+    background-color:blanchedalmond;
+    padding: 15px;
+}
+
+
+#membros a{
+    display: block;
+    background-color: burlywood;
+    border-radius: 10px;
+    width: 130px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    transition: 0.5s;
+}
+
+#membros a:hover{
+    background-color: rgb(253, 214, 170);
+}
+
+h1, h2{text-align: center;}
+
+/* artigos */
+
+#artigos{
+    margin: auto;
+    max-width: 75vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-artigo{
+    max-height: 600px;
+    max-width: 400px;
+    border-radius: 25px;
+    margin: 25px;
+    background-color: bisque;
+    overflow-y: hidden;
+}
+
+.card-artigo img{
+    width: 100%;
+}
+
+.info-artigo{
+    padding: 0 20px;
+}
+
+.info-artigo h1{
+    margin: 10px;
+}
+
+.info-artigo a{
+    display: block;
+    color: white;
+    background-color: burlywood;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.info-artigo a:hover{
+    background-color: rgb(253, 214, 170);
+}
+
+footer > p{
+    padding: 10px;
+}

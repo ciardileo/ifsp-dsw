@@ -46,7 +46,7 @@ article{
 
 .capa-artigo{
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -72,10 +72,15 @@ img{
     width: 60vw;
 }
 
+.conteudo h2{
+    margin: 15px 0px;
+}
+
 .conteudo p{margin: 10px 0;}
 
 .legenda{
     margin-bottom: 5px;
+    font-size: 0.9em;
     color: rgb(75, 72, 72);
 }
 

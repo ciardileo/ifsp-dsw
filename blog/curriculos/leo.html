@@ -1,12 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leo</title>
+  <meta name="author" content="Leonardo Ciardi">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Leonardo Ciardi</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      text-decoration: none;
+    }
+
+    header{
+      background-color: #cd5c5c;
+      color: white;
+      padding: 10px;
+    }
+
+    #profile{
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      margin-right: 25px;
+    }
+
+    #header{
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      margin: auto;
+    }
+
+    main{
+      width: fit-content;
+      margin: auto;
+      padding: 15px;
+    }
+
+    main h1{
+      font-size: 2em;
+      background-color: #cd5c5c75;
+      padding: 5px;
+    }
+
+    main p, li{
+      margin: 5px;
+      font-size: 1.2em;
+    }
+
+    main ul{
+      padding: 5px 25px;
+    }
+
+    #block{
+      margin: 30px;
+    }
+
+    header a{
+      color: white;
+      display: block;
+      width: fit-content;
+      padding: 8px;
+      margin: 10px 0;
+      border: 1px solid white;
+      border-radius: 10px;
+      transition: 500ms;
+  }
+  
+  header a:hover{
+      background-color: white;
+      color: black;
+      border: 1px solid #cd5c5c;
+  }
+
+  @media screen and (min-width: 678px) {
+    #about{
+      display: flex;
+    }
+    
+    #flex1{
+      width: 40%;
+    }
+
+    #flex2{
+      width: 60%;
+    }
+  }
+  
+
+  </style>
 </head>
 <body>
- 
+  <header>
+    <div id="header">
+      <img id="profile" src="../imagens/java.png" alt="Léo">
+      <div>
+        <h1>Leonardo Ciardi, 16</h1>
+        <h2>Estudante do IFSP</h2>
+        <a href="../index.html">Home</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="resume">
+      <h1>Resumo</h1>
+      <p>Atualmente buscando oportunidades como jovem aprendiz na área de tecnologia da informação.</p>
+    </section>
+
+    <section id="about">
+      <div id="flex1"">
+        <div id="block">
+          <h1>Informações</h1>
+          <p>(11) 945968686</p>
+          <p><a href="mailto:leo.ciiardi@outlook.com">leo.ciiardi@outlook.com</a></p>
+          <p>São Miguel Paulista, São Paulo, SP</p>
+        </div>
+
+        <div id="block">
+          <h1>Habilidades</h1>
+          <ul>
+            <li>Trabalho em equipe;</li>
+            <li>Design gráfico;</li>
+            <li>Desenvolvimento web;</li>
+            <li>Python;</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="flex2">
+        <div id="block">
+          <h1>Formação acadêmica</h1>
+          <p>2023 - Atualmente: Ensino médio técnico integrado em Informática para Internet, IFSP - SMP</p>
+          <p>Ensino Fundamental - Completo</p>
+        </div>
+
+        <div id="block">
+          <h1>Experiência</h1>
+          <ul>
+            <li>Fiz um site para uma clínica de odontopediatria em 2023;</li>
+            <li>Fiz parte da produção de um site para uma empresa de segurança de cargo em 2021;</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
 </body>
 </html>

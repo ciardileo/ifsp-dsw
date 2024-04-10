@@ -96,3 +96,17 @@ footer > p{
     background-color: black;
     color: white;
 }
+
+@media screen and (max-width: 600px) {
+    .conteudo{
+        width: 80vw;
+    }
+    
+    article{
+        width: 100vw;
+    }
+
+    .container-info{
+        padding: 10px;
+    }
+}

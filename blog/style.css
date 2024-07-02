@@ -11,18 +11,20 @@
     box-sizing: border-box;
     font-family: "Poppins";
     text-decoration: none;
+    list-style: none;
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: #FFF5E1;
 }
 
 /* cabeçalho */
 
 header{
-    background-color: burlywood;
+    background-color: #FF6969;
     padding: 15px;
     margin-bottom: 10px;
+    color: white;
 }
 
 #btn-membros{
@@ -40,14 +42,14 @@ header{
     display: none;
     margin: auto;
     width: 200px;
-    background-color:blanchedalmond;
+    background-color:#FF6969;
     padding: 15px;
 }
 
 
 #membros a{
     display: block;
-    background-color: burlywood;
+    background-color: #FF6969;
     border-radius: 10px;
     width: 130px;
     color: white;
@@ -58,7 +60,7 @@ header{
 }
 
 #membros a:hover{
-    background-color: rgb(253, 214, 170);
+    background-color: #C80036;
 }
 
 h1, h2{text-align: center;}
@@ -81,7 +83,7 @@ h1, h2{text-align: center;}
     max-width: 400px;
     border-radius: 25px;
     margin: 25px;
-    background-color: bisque;
+    border: 2px solid #0c184454;
     overflow-y: hidden;
 }
 
@@ -100,7 +102,7 @@ h1, h2{text-align: center;}
 .info-artigo a{
     display: block;
     color: white;
-    background-color: burlywood;
+    background-color: #FF6969;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
@@ -109,7 +111,7 @@ h1, h2{text-align: center;}
 }
 
 .info-artigo a:hover{
-    background-color: rgb(253, 214, 170);
+    background-color: #C80036;
 }
 
 footer > p{

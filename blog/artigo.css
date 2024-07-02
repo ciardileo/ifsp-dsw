@@ -16,9 +16,9 @@
 
 header{
     text-align: center;
-    background-color: burlywood;
+    background-color: #FF6969;
+    color: white;
     padding: 15px;
-    margin-bottom: 10px;
 }
 
 header > a{
@@ -37,7 +37,12 @@ header > a:hover{
     color: black;
 }
 
+body{
+    background-color: #f7efdf;
+}
+
 /* cabeçalho do artigo */ 
+
 
 article{
     margin: auto;
@@ -57,6 +62,7 @@ article{
 
 .titulo-artigo{
     font-size: 2em;
+    margin: 15px 0 ;
 }
 
 img{
@@ -76,13 +82,17 @@ img{
     margin: 15px 0px;
 }
 
-.conteudo p{margin: 10px 0;}
+.conteudo p:not(.legenda){
+    margin: 10px 0;
+    font-size: 1.1em;
+}
 
 .legenda{
     margin-bottom: 5px;
     font-size: 0.9em;
     color: rgb(75, 72, 72);
 }
+
 
 /* footer */
 
@@ -97,9 +107,13 @@ footer > p{
     color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
     .conteudo{
-        width: 80vw;
+        width: 90vw;
+    }
+
+    .conteudo p{
+        font-size: 1em;
     }
     
     article{

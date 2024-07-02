@@ -1,59 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head> 
-        <meta charset="UTF-8">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            h2{
-                text-align: center;
-            }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Cauê Campos Fraga</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      text-decoration: none;
+    }
 
-            div{
-            width: 50%;
-            display: block;
-            margin: auto;
-            text-align: left;
-        }
+    header{
+      background-color: #001eff;
+      color: white;
+      padding: 10px;
+    }
 
-        </style>
-        <title>Cauê Campos Fraga</title> 
-    </head>
-    <body>
-        <header>
-            <div>
-            <h2>Currículo de Cauê Campos Fraga</h2>
-            <h2>IMAGEM</h2>
-            <hr>
-            <h3>DADOS PESSOAIS</h3>
-            <p>Nome: Cauê Campos Fraga</p>
-            <p>Data de nascimento: 21/06/2008, 15 anos</p>
-            <p>Endereço: Av. Deocleciano Alves Pereira, 275 - São Miguel Paulista - São Paulo, SP, Brasil</p>
-            <p>Telefone: (11) 99823-9501</p>
-            <p>Email: cauecf2008@gmail.com</p>
-            <hr>
-            <h3>FORMAÇÃO ACADÊMICA</h3>
-            <p>Cursando Ténico em Imformática Para Internet Integrado ao Ensino Médio 3/8 Semestres</p>
-            <hr>
-            <h3>IDIOMAS</h3>
-            <h4>Inglês</h4>
-            <li>lê: razoaelmente</li>
-            <li>compreende: razoavelmente</li>
-            <li>escreve: razoavelmente</li>
-            <li>fala: pouco</li>
-            <h4>Espanhol</h4>
-            <li>lê: razoaelmente</li>
-            <li>compreende: pouco</li>
-            <li>escreve: pouco</li>
-            <li>fala: pouco</li>
-            
+    #profile{
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      margin-right: 25px;
+    }
+
+    #header{
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      margin: auto;
+    }
+
+    main{
+      width: fit-content;
+      margin: auto;
+      padding: 15px;
+    }
+
+    main h1{
+      font-size: 2em;
+      background-color: #0059ff75;
+      padding: 5px;
+    }
+
+    main p, li{
+      margin: 5px;
+      font-size: 1.2em;
+    }
+
+    main ul{
+      padding: 5px 25px;
+    }
+
+    #block{
+      margin: 30px;
+    }
+
+    header a{
+      color: white;
+      display: block;
+      width: fit-content;
+      padding: 8px;
+      margin: 10px 0;
+      border: 1px solid white;
+      border-radius: 10px;
+      transition: 500ms;
+  }
+  
+  header a:hover{
+      background-color: white;
+      color: black;
+      border: 1px solid #cd5c5c;
+  }
+
+  @media screen and (min-width: 678px) {
+    #about{
+      display: flex;
+    }
+    
+    #flex1{
+      width: 40%;
+    }
+
+    #flex2{
+      width: 60%;
+    }
+  }
+  
+
+  </style>
+</head>
+<body>
+  <header>
+    <div id="header">
+      <img id="profile" src="../imagens/java.png" alt="Léo">
+      <div>
+        <h1>Cauê Campos Fraga, 16</h1>
+        <h2>Estudante do IFSP</h2>
+        <a href="../index.html">Home</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="resume">
+      <h1>Resumo</h1>
+      <p>.</p>
+    </section>
+
+    <section id="about">
+      <div id="flex1"">
+        <div id="block">
+          <h1>Informações</h1>
+          <p>(11) 998239501</p>
+          <p><a href="mailto:cf2008caue@gmail.com">cf2008caue@gmail.com</a></p>
+          <p>São Miguel Paulista, São Paulo, SP</p>
         </div>
-        </header>
-        <main>
 
-        </main>
-        <footer>
+        <div id="block">
+          <h1>Habilidades</h1>
+          <ul>
+            <li>um cara daora<li>
+          </ul>
 
-        </footer>
-    </body>
-</html> 
+        </div>
+      </div>
+
+      <div id="flex2">
+        <div id="block">
+          <h1>Formação acadêmica</h1>
+          <p>2023 - Atualmente: Ensino médio técnico integrado em Informática para Internet, IFSP - SMP</p>
+          <p>Ensino Fundamental - Completo</p>
+        </div>
+
+        
+    </section>
+  </main>
+
+</body>
+</html>

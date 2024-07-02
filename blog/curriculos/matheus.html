@@ -3,39 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style> 
-    h2{
-        text-align: center;
-    }
-    div{
-        
-    }
+    <title>andrew</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 10;
+        }
+
+        #foto{
+            display: block;
+            width: 30%;
+            height: 200px;
+        }
+
+        #texto{
+            width: 70%;
+        }
+
+        #texto > p, h1{
+            margin: 15px;
+            text-align: left;
+        }
+
+        li {
+            margin: 8px;
+            padding: 5px;
+        }
+
+        main{
+            width: 50%;
+            margin: 80px auto;
+        }
+
+        header {
+            width: 50%;
+            margin: 80px auto;
+        }
+
+        body {
+            font-family: verdana;
+        }
+
+        h1{
+            font-family: verdana;
+            text-align: left;
+        }
+
+        h3 {
+            margin: 15px auto;
+        }
     </style>
-    <title> Curriculo MP </title>
 </head>
 <body>
     <header>
-        <div> 
-            <h2>Matheus Pietro Do Carmo Silva</h2>
-            <p> Data de nascimento: 17/10/2007, 16 anos </p> 
-            <p> Endereço: Avenida River, 465, Guarulhos, São Paulo, Brasil </p> 
-            <p> Telefone (11) 96841-8603 </p> 
-            <p> email: matheuspietrocarmo490@gmail.com </p> 
-            <h3><strong> FORMAÇÃO ACADÊMICA </strong></h3>
-            <li>Ensino Fundamental (completo)</li>
-            <li>Ensino Médio (incompleto)</li>
-            <li>Técnico em Informática para Internet Integrado ao Ensino Médio (cursando 2/4)</li>
-            <hr>
-         </div>
-       
+        <section>
+            <img id="foto" src="../imagens/java.png" alt="Andrew">
+            <div id="texto">
+                <h1>Matheus Pietro Do Carmo Silva</h1>
+                <p> Data de nascimento: 17/10/2007</p>
+                <p> Endereço: Av River - São Paulo, SP, BR</p>
+                <p> Telefone: (11) 9 </p>
+                <p> Email: matheuspietrocarmo490@gmail.com</p>
+            </div>
+        </section>
     </header>
-
     <main>
-    
+        <h3>FORMAÇÃO ACADÊMICA</h3>
+        <hr>
+        <div>
+            <ul>
+                <li>Ensino Fundamental (completo)</li>
+                <li>Ensino Médio (cursando)</li>
+            </ul>
+        </div>
     </main>
-
-    <footer>
-
-    </footer>
+    <main>
+        <h3>IDIOMAS</h3>
+        <hr>
+        <div>
+            <ul>
+                <li>Inglês (básico)</li>
+            </ul>
+        </div>
+    </main>
+    <main>
+        <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+        <hr>
+        <div>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </main>
 </body>
 </html>

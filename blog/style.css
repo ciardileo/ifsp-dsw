@@ -35,6 +35,10 @@ header{
     cursor: pointer;
 }
 
+#btn-membros:hover{
+    color: rgb(226, 205, 205);
+}
+
 #membros{
     position: absolute;
     top: 105px;
@@ -87,8 +91,12 @@ h1, h2{text-align: center;}
     overflow-y: hidden;
 }
 
-.card-artigo img{
+.card-img{
+    border-radius: 25px 25px 0 0;
     width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
 }
 
 .info-artigo{

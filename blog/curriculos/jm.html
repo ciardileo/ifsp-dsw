@@ -3,47 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Manuel</title>
+
     <style>
-        h2{
-            text-align: center;
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
         }
 
-        div{
-            width: 50%;
+        section{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 10;
+        }
+
+        #foto{
             display: block;
-            margin: auto;
-            text-align: center;
+            width: 30%;
+            height: 200px;
         }
 
+        #texto{
+            width: 70%;
+        }
 
+        #texto > p, h1{
+            margin: 15px;
+            text-align: left;
+        }
+
+        li {
+            margin: 8px;
+            padding: 5px;
+        }
+
+        main{
+            width: 50%;
+            margin: 80px auto;
+        }
+
+        header {
+            width: 50%;
+            margin: 80px auto;
+        }
+
+        body {
+            font-family: verdana;
+        }
+
+        h1{
+            font-family: verdana;
+            text-align: left;
+        }
+
+        h3 {
+            margin: 15px auto;
+        }
     </style>
-    <title>Currículo João Manuel</title>
 </head>
 <body>
     <header>
-       <div>
-            <h2><strong>Currículo João Manuel</strong></h2>
-            <p>Data de nascimento: 28/08/2007, 16 anos </p>
-            <p>Endereço: Rua Itatira, 543 - Bairro Uirapuru - Guarulhos, São Paulo - Brasil </p>
-            <p>Telefone: (11) 94177-4214 </p>
-            <p>Email: joaomanueloliveira013@gmail.com</p>
-            <p>Idioma: português-br</p>
-            <h3>FORMAÇÃO ACADÊMICA</h3>
-            <li>Ensino Fundamental (completo)</li>
-            <li>Ensino Médio (cursando 2/3)</li>
-            <li>Técnico em Informática para Internet Integrado ao Ensino Médio (cursando 2/4)</li>
-            <hr>
-            
-        </div>
-
+        <section>
+            <img id="foto" src="https://cci.com.do/wp-content/uploads/2019/11/clientes_.svg" alt="MP">
+            <div id="texto">
+                <h1>João Manuel C. de Jesus Oliveira</h1>
+                <p> Data de nascimento: 28/08/2007</p>
+                <p> Endereço: Rua Ita, Guarulhos, BR</p>
+                <p> Telefone: (11) 94177-4214</p>
+                <p> Email: joaomanueloliveira013@gmail.com</p>
+            </div>
+        </section>
     </header>
-
     <main>
-
+        <h3>FORMAÇÃO ACADÊMICA</h3>
+        <hr>
+        <div>
+            <ul>
+                <li>Ensino Fundamental (completo)</li>
+                <li>Ensino Médio (cursando)</li>
+            </ul>
+        </div>
     </main>
-
-    <footer>
-
-    </footer>
+    <main>
+        <h3>IDIOMAS</h3>
+        <hr>
+        <div>
+            <ul>
+                <li>Inglês (básico)</li>
+            </ul>
+        </div>
+    </main>
+    <main>
+        <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+        <hr>
+        <div>
+            <ul>
+                <li>Já fui atendente de sorveteria por 2 anos. Tambem trabalhei de ajudante de marceneiro. </li>
+            </ul>
+        </div>
+    </main>
 </body>
 </html>

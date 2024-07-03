@@ -68,7 +68,7 @@ article{
 img{
     display: block;
     margin: 10px auto;
-    width: 100%;
+    max-width: 100%;
 }
 
 /* artigo */
@@ -79,7 +79,7 @@ img{
 }
 
 .conteudo h2{
-    margin: 15px 0px;
+    margin: 25px 0 15px 0; 
 }
 
 .conteudo p:not(.legenda){

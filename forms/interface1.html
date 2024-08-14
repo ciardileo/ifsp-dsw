@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name='author' content='Leonardo Ciardi'/>
+    <title>Interface 1</title>
+
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        font-family: "Helvetic Neue", Arial, Helvetica, sans-serif;
+      }
+
+      body{
+        height: 100vh;
+        width: 100vw;
+      }
+
+      header{
+        background-color: black;
+        height: 150px;
+        width: 100%;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      #form-container{
+        background-color: #f1f1f1;
+        padding: 30px;
+        width: 65vw;
+        margin: 15px auto;
+        border-radius: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+
+      #main-container{
+        display: flex;
+        gap: 50px;
+      }
+
+      .sub-container{
+        width: 50%;
+      }
+
+      label{
+        font-size: 1.1em;
+        display: block;
+        margin: 10px 0;
+      }
+
+      input, select{
+        font-size: 1em;
+        width: 100%;
+        height: 30px;
+      }
+
+      textarea{
+        width: 100%;
+      }
+
+      p{
+        margin: 10px;
+      }
+
+      #btn{
+        margin-top: 20px;
+        display: block;
+        background-color: #3CB043;
+        color: white;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      #btn:hover{
+        background-color: #2E8B57;;
+      }
+
+      footer{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 650px){
+        #form-container{
+          width: 90vw;
+        }
+        
+        #main-container{
+          display: block;
+        }
+
+        .sub-container{
+          width: 100%;
+        }
+      }
+
+    </style>
+    
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <div id="form-container">
+        <h1>Preencha as informações do produto</h1>
+  
+        <form method="POST">
+          <div id='main-container'>
+            <div class="sub-container">
+              <p>
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" name="nome" id="nome" required/>
+              </p>
+    
+              <p>
+                <label for="tipo">Tipo do Produto:</label>
+                <select name="tipo" id="tipo" required>
+                  <option value='alimentacao'>Alimentação</option>
+                  <option value='vestuario'>Vestuário</option>
+                  <option value='utilitarios'>Utilitários</option>
+                  <option value='domesticos'>Domésticos</option>
+                  <option values='tecnologia'>Tecnologia</option>
+                </select>
+              </p>
+    
+              <p>
+                <label for="qtd">Quantidade em Estoque:</label>
+                <input type="number" name="qtd" id="qtd" required/>
+              </p>
+    
+              <p>
+                <label for="dimensoes">Dimensões (cm):</label>
+                <input type="text" placeholder="comprimento x largura x altura" name="dimensoes" id="dimensoes"/>
+              </p>
+    
+              <p>
+                <label for="valor-lote">Valor por Lote (R$):</label>
+                <input type="number" name="valor-lote" id="valor-lote" required>
+              </p>
+    
+              <p>
+                <label for="dt-producao">Data de Produção:</label>
+                <input type="date" name="dt-producao" id="dt-producao" required/>
+              </p>
+    
+            </div>
+    
+            <div class="sub-container">
+              <p>
+                <label for="marca">Marca:</label>
+                <input type="text" name="marca" id="marca" required>
+              </p>
+    
+              <p>
+                <label for="unidade">Unidade de Medida:</label>
+                <select required name="unidade" id="unidade">
+                  <option value="unidade">Unidade</option>
+                  <option value="caixa">Caixa (6 unidades)</option>
+                  <option value="lote">Lotes (10 unidades)</option>
+                </select>
+              </p>
+    
+              <p>
+                <label for="peso">Peso (kg):</label>
+                <input type="number" name="peso" id="peso">
+              </p>
+    
+              <p>
+                <label for="valor-unitario">Valor Unitário (R$):</label>
+                <input type="number" name="valor-unitario" id="valor-unitario" required>
+              </p>
+    
+              <p>
+                <label for="codigo">Código de Barras:</label>
+                <input type="text" name="codigo" id="codigo" required>
+              </p>
+    
+              <p>
+                <label for="dt-validade">Data de Validade:</label>
+                <input type="date" name="dt-validade" id="dt-validade" required>
+              </p>
+            </div>
+          </div>
+  
+          <p>
+            <label for="fornecedor">Fornecedor:</label>
+            <input type="text" name="fornecedor" id="fornecedor" required>
+          </p>
+  
+          <p>
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" id="descricao" rows=10></textarea>
+          </p>
+  
+          <input type="submit" id="btn" value="Cadastrar Produto">
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; Desenvolvido por PingDev - 2024</p>
+    
+    </footer>
+
+  </body>
+</html>

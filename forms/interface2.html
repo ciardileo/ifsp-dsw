@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name='author' content='Leonardo Ciardi'/>
+		<title>Interface 1</title>
+
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				overflow-x: hidden;
+				font-family: "Helvetic Neue", Arial, Helvetica, sans-serif;
+			}
+
+			body{
+				height: 100vh;
+				width: 100vw;
+			}
+
+			header{
+				background-color: rgba(0, 0, 255, 0.5);
+				padding: 30px;
+				width: 100%;
+			}
+
+			h1{
+				text-align: center;
+			}
+
+			#form-container{
+				background-color: #f1f1f1;
+				padding: 30px;
+				width: 65vw;
+				margin: 15px auto;
+				border-radius: 10px;
+				box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+			}
+
+			.main-container{
+				display: flex;
+				gap: 50px;
+			}
+
+			.sub-container{
+				width: 50%;
+			}
+
+			label{
+				font-size: 1.1em;
+				display: block;
+				margin: 10px 0;
+			}
+
+			input, select{
+				font-size: 1.05em;
+				width: 100%;
+				height: 30px;
+				border-radius: 5px;
+				border: 0.5px solid rgba(0, 0, 255, 0.2);
+				padding: 5px;
+			}
+
+			textarea{
+				width: 100%;
+				border-radius: 5px;
+			}
+
+			p{
+				margin: 10px;
+			}
+
+			#btn{
+				margin-top: 20px;
+				display: block;
+				background-color: rgba(0, 0, 255, 0.5);
+				color: white;
+				height: 40px;
+				border: none;
+				cursor: pointer;
+				border-radius: 10px;
+			}
+
+			#btn:hover{
+				background-color: rgba(0, 0, 255, 0.2);
+			}
+
+			footer{
+				background-color: black;
+				color: white;
+				padding: 10px;
+				width: 100%;
+				text-align: center;
+			}
+
+			fieldset{
+				margin: 30px 0;
+				border: 1px solid rgba(0, 0, 255, 0.19);
+				background-color: rgba(189, 189, 190, 0.1);
+				border-radius: 10px;
+				padding-bottom: 10px;
+				box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+			}
+
+			legend{
+				font-size: 1.1em;
+				padding: 5px;
+				color: rgba(0, 0, 255, 0.8);
+				margin-left: 20px;
+				margin-top: 50px;
+			}
+
+			@media screen and (max-width: 650px){
+				#form-container{
+					width: 90vw;
+				}
+
+				.main-container{
+					display: block;
+				}
+
+				.sub-container{
+					width: 100%;
+				}
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<header>
+			<h1>Formulário de Aluguel de Carros</h1>
+		</header>
+
+		<main>
+			<div id="form-container">
+				<h1>Preencha as informações do Aluguel</h1>
+
+				<form method="POST">
+					<fieldset>
+						<legend>Informações do Cliente</legend>
+						<div class='main-container'>
+							<div class="sub-container">
+								<p>
+									<label for="nome">Nome Completo:</label>
+									<input type="text" name="nome" id="nome" required/>
+								</p>
+	
+								<p>
+									<label for="telefone">Telefone:</label>
+									<input type="tel" name="telefone" id="telefone" required/>
+								</p>
+	
+								<p>
+									<label for="endereco">Endereço:</label>
+									<input type="text" name="endereco" id="endereco" required/>
+								</p>
+
+								<p>
+									<label for="nascimento">Data de Nascimento:</label>
+									<input type="date" name="nascimento" id="nascimento" required/>
+								</p>
+							</div>
+
+							<div class="sub-container">
+								<p>
+									<label for="cpf">CPF (só numeros):</label>
+									<input type="text" name="cpf" id="cpf" required/>
+								</p>
+
+								<p>
+									<label for="email">Email:</label>
+									<input type="email" name="email" id="email" required/>
+								</p>
+
+								<p>
+									<label for="estado">Estado:</label>
+									<select name="estados" id="estados">
+										<option value="AC">AC</option>
+										<option value="AL">AL</option>
+										<option value="AP">AP</option>
+										<option value="AM">AM</option>
+										<option value="BA">BA</option>
+										<option value="CE">CE</option>
+										<option value="DF">DF</option>
+										<option value="ES">ES</option>
+										<option value="GO">GO</option>
+										<option value="MA">MA</option>
+										<option value="MT">MT</option>
+										<option value="MS">MS</option>
+										<option value="MG">MG</option>
+										<option value="PA">PA</option>
+										<option value="PB">PB</option>
+										<option value="PR">PR</option>
+										<option value="PE">PE</option>
+										<option value="PI">PI</option>
+										<option value="RJ">RJ</option>
+										<option value="RN">RN</option>
+										<option value="RS">RS</option>
+										<option value="RO">RO</option>
+										<option value="RR">RR</option>
+										<option value="SC">SC</option>
+										<option value="SP">SP</option>
+										<option value="SE">SE</option>
+										<option value="TO">TO</option>
+									</select>
+								</p>
+
+								<p>
+									<label for="estado-civil">Estado Civil:</label>
+									<select id="estado-civil" name="estado-civil">
+										<option value="solteiro">Solteiro</option>
+										<option value="casado">Casado</option>
+										<option value="viuvo">Viúvo</option>
+										<option value="divorciado">Divorciado</option>
+									</select>
+								</p>
+							</div>
+						</div>
+					
+						<p>
+							<label for="profissao">Profissão:</label>
+							<input type="text" name="profissao" id="profissao"/>
+						</p>
+
+						<p>
+							<label for="salario">Salário (R$):</label>
+							<input type="number" name="salario" id="salario" required/>
+						</p>
+					</fieldset>
+
+					<fieldset>
+						<legend>Informações do Carro</legend>
+						<div class="main-container">
+							<div class="sub-container">
+								<p>
+									<label for="modelo">Modelo:</label>
+									<input type="text" name="modelo" id="modelo" required/>
+								</p>
+
+								<p>
+									<label for="placa">Placa:</label>
+									<input type="text" name="placa" id="placa" required/>
+								</p>
+
+								<p>
+									<label for="ano">Ano:</label>
+									<input type="number" name="ano" id="ano" required/>
+								</p>
+							</div>
+
+							<div class="sub-container">
+								<p>
+									<label for="marca">Marca:</label>
+									<input type="text" name="marca" id="marca" required/>
+								</p>
+
+								<p>
+									<label for="cor">Cor:</label>
+									<input type="text" name="cor" id="cor" required/>
+								</p>
+
+								<p>
+									<label for="valor-diaria">Valor da Diária (R$):</label>
+									<input type="number" name="valor-diaria" id="valor-diaria" required/>
+								</p>
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Informaçoes do Alugel</legend>
+						<div class="main-container">
+							<div class="sub-container">
+								<p>
+									<label for="data-inicio">Data de Início:</label>
+									<input type="date" name="data-inicio" id="data-inicio" required/>
+								</p>
+							</div>
+
+							<div class="sub-container">
+								<p>
+									<label for="data-termino">Data de Término:</label>
+									<input type="date" name="data-termino" id="data-termino" required/>
+								</p>
+							</div>
+						</div>
+
+						<p>
+							<label for="observacoes">Observações:</label>
+							<textarea id="observacoes" name="observacoes" rows=15></textarea>
+						</p>
+					</fieldset>
+
+					<fieldset>
+						<legend>Informações da Loja</legend>
+						<div class="main-container">
+							<div class="sub-container">
+								<p>
+									<label for="nome-loja">Nome da Loja:</label>
+									<input type="text" name="nome-loja" id="nome-loja" required/>
+								</p>
+							</div>
+
+							<div class="sub-container">
+								<p>
+									<label for="endereco-loja">Endereço da Loja:</label>
+									<input type="text" name="endereco-loja" id="endereco-loja" required/>
+								</p>
+							</div>
+						</div>
+
+						<p>
+							<label for="telefone-loja">Telefone da Loja:</label>
+							<input type="tel" name="telefone-loja" id="telefone-loja" required/>
+						</p>
+					</fieldset>
+
+					<fieldset>
+						<legend>Informações do Atendente</legend>
+						<div class="main-container">
+							<div class="sub-container">
+								<p>
+									<label for="nome-atendente">Nome do Atendente:</label>
+									<input type="text" name="nome-atendente" id="nome-atendente" required/>
+								</p>
+							</div>
+
+							<div class="sub-container">
+								<p>
+									<label for="id-atendente">ID do Atendente:</label>
+									<input type="text" name="id-atendente" id="id-atendente" required
+								</p>
+
+							</div>
+						</div>
+					</fieldset>
+
+					<input type="submit" id="btn" value="Finalizar Aluguel">
+				</form>
+			</div>
+		</main>
+
+		<footer>
+			<p>&copy; Desenvolvido por PingDev - 2024</p>
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* gerais */
+
+section {
+    margin: 20px 0;
+}
+
+h1 {
+    margin: 30px 0;
+    color: rgb(41, 40, 40);
+}
+
+
+/* rodapé */
+#form {
+    width: 90%;
+    margin: auto;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: rgb(41, 40, 40);
+    color: white;
+    padding: 10px;
+}
+
+#home {
+    width: 60vw;
+    margin: auto;
+}
+
+.icones {
+    width: 128px;
+    display: block;
+    margin: auto;
+}
+
+::placeholder {
+    color: rgb(95, 95, 95);
+}
+
+#div-botao-home {
+    border-radius: 25px;
+    padding: 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    background-color: #f1f1f1;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#botao-home {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    border-radius: 25px;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+    background-image: url("assets/seta-para-cima.png");
+    background-color: #f1f1f1;
+    background-size: contain;
+}
+
+
+
+#sobre {
+    width: 80vw;
+    display: block;
+    margin: 20px auto;
+}
+
+#jbutton {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #6a6b6d;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+#jbutton:hover {
+    background-color: #84868a;
+}
+
+#titulozao {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(41, 40, 40);
+}
+
+#titulozada {
+    margin: 20px;
+    text-align: center;
+}
+
+#paragrafozinho{
+    text-align: center;
+    color: rgb(41, 40, 40);
+}

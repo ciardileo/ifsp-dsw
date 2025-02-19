@@ -1,0 +1,26 @@
+[
+{
+    "nome": "Leo",
+    "idade": "17",
+    "peso" : "66.3",
+    "altura": "1.76"
+},
+{
+    "nome": "Vice",
+    "idade": "16",
+    "peso" : "70",
+    "altura": "1.75"
+},
+{
+    "nome": "Matheus",
+    "idade": "16",
+    "peso" : "55",
+    "altura": "1.73"
+},
+{
+    "nome": "Andrew",
+    "idade": "16",
+    "peso" : "75.3",
+    "altura": "1.86"
+}
+]

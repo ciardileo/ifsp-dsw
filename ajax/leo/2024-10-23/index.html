@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregar Alunos com AJAX</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+    <button id="carregar" onclick="carregarAlunos()">Carregar Alunos</button>
+    <table id="tabela">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Language</th>
+                <th>Bio</th>
+                <th>Version</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela">
+        </tbody>
+    </table>
+
+    <script>
+        const tb = document.getElementById("corpoTabela")
+
+        function carregarAlunos(){
+            let request = new XMLHttpRequest()
+            request.open("GET", "https://microsoftedge.github.io/Demos/json-dummy-data/64KB.json", true)
+
+            request.onload = function(){
+                if (request.status === 200 && request.readyState == 4){
+                    console.log("Carregado com sucesso!")
+                    const dados = JSON.parse(request.responseText)
+
+                    carregarTabela(dados)
+                }
+            }
+
+            request.send()
+        }
+
+        
+        function carregarTabela(dados){
+            console.log(dados)
+            dados.forEach(row => {
+                let newRow = tb.insertRow(0)
+
+                let cell1 = newRow.insertCell(0)
+                let cell2 = newRow.insertCell(1)
+                let cell3 = newRow.insertCell(2)
+                let cell4 = newRow.insertCell(3)
+                let cell5 = newRow.insertCell(4)
+
+                cell1.textContent = row.id
+                cell2.textContent = row.name
+                cell3.textContent = row.language
+                cell4.textContent = row.bio
+                cell5.textContent = row.version
+            });
+        }
+    </script>
+</body>
+</html>

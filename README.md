@@ -3,6 +3,7 @@
 - Tecnologia AJAX
 - Framework Bootstrap
 - Java Web com JSP e Servlets
+- Criação de Dynamic Web Projects com o Eclipse EE
 - Conexão à banco de dados MySQL
 
 ### Projetos desenvolvidos durante o curso:
